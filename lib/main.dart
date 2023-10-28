@@ -1,4 +1,5 @@
-import 'package:airbnb/ui/onboarding/screens/loading_screen.dart';
+import 'package:airbnb/routes.dart';
+import 'package:airbnb/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,13 +11,10 @@ class Airbnb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Airbnb',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const LoadingScreen(),
+      theme: themeData,
+      routerConfig: routes,
     );
   }
 }
