@@ -1,0 +1,15 @@
+{
+    "authenticationScreenTitle": "Connectez-vous ou inscrivez-vous à Airbnb",
+    "phoneAuthenticationScreenCountryDropDownFieldLabel": "Pays/Région",
+    "phoneAuthenticationScreenPhoneNumberFieldLabel": "Numéro de téléphone",
+    "phoneAuthenticationScreenConfirmationNotice": "Nous vous appellerons ou vous enverrons un SMS pour confirmer votre numéro. Les tarifs standard pour les messages et les données s'appliquent.",
+    "phoneAuthenticationScreenContinueButtonLabel": "Continuer",
+    "or": "ou",
+    "authenticatoinProvidersButtonLable": "Continue avec {value}",
+    "@authenticatoinProvidersButtonLable": {
+        "value": "String"
+    },
+    "emailTextFieldLabel": "E-mail",
+    "firstNameTextFieldLabel": "Prénom",
+    "lastNameTextFieldLabel": "Nom de famille"
+}
