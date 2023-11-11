@@ -1,8 +1,8 @@
-import 'package:airbnb/ui/onboarding/assets/onboarding_assets.dart';
-import 'package:airbnb/ui/onboarding/screens/authentication/email_screen.dart';
-import 'package:airbnb/ui/onboarding/screens/authentication/entities/auth_provider.dart';
-import 'package:airbnb/ui/onboarding/screens/authentication/models/authentication_option_model.dart';
-import 'package:airbnb/ui/onboarding/screens/authentication/phone_screen.dart';
+import 'package:airbnb/screens/authentication/entities/auth_provider.dart';
+import 'package:airbnb/shared/assets.dart';
+import 'package:airbnb/ui/screens/authentication/email_screen.dart';
+import 'package:airbnb/ui/screens/authentication/models/authentication_option_model.dart';
+import 'package:airbnb/ui/screens/authentication/phone_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -16,7 +16,7 @@ class AuthenticationOptions extends StatelessWidget {
     final List<AuthenticationOptionModel> authOptions = [
       AuthenticationOptionModel(
         AuthProvider.email,
-        OnBoardingAssets.email,
+        Assets.email,
         onPressed: () => Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => const EmailScreen(),
@@ -25,16 +25,16 @@ class AuthenticationOptions extends StatelessWidget {
       ),
       AuthenticationOptionModel(
         AuthProvider.phone,
-        OnBoardingAssets.phone,
+        Assets.phone,
         onPressed: () => Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => const PhoneScreen(),
           ),
         ),
       ),
-      AuthenticationOptionModel(AuthProvider.facebook, OnBoardingAssets.facebook),
-      AuthenticationOptionModel(AuthProvider.google, OnBoardingAssets.google),
-      AuthenticationOptionModel(AuthProvider.apple, OnBoardingAssets.apple),
+      AuthenticationOptionModel(AuthProvider.facebook, Assets.facebook),
+      AuthenticationOptionModel(AuthProvider.google, Assets.google),
+      AuthenticationOptionModel(AuthProvider.apple, Assets.apple),
     ];
 
     authOptions.removeWhere((model) => model.authProvider == authProvider);
@@ -75,10 +75,7 @@ class AuthenticationOptions extends StatelessWidget {
                       width: 25.0,
                     ),
                     const Spacer(),
-                    Text(
-                      l10n.authenticatoinProvidersButtonLable(providerName),
-                      style: Theme.of(context).textTheme.titleMedium,
-                    ),
+                    Text(l10n.authenticatoinProvidersButtonLable(providerName)),
                     const Spacer(),
                   ],
                 ),

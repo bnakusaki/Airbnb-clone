@@ -1,6 +1,6 @@
-import 'package:airbnb/ui/onboarding/screens/authentication/entities/auth_provider.dart';
-import 'package:airbnb/ui/onboarding/screens/authentication/profile_setup_screen.dart';
-import 'package:airbnb/ui/onboarding/screens/authentication/widgets/authentication_options.dart';
+import 'package:airbnb/screens/authentication/entities/auth_provider.dart';
+import 'package:airbnb/ui/screens/authentication/profile_setup_screen.dart';
+import 'package:airbnb/ui/screens/authentication/widgets/authentication_options.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:ionicons/ionicons.dart';

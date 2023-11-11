@@ -1,7 +1,7 @@
-import 'package:airbnb/ui/onboarding/screens/authentication/entities/auth_provider.dart';
+import 'package:airbnb/screens/authentication/entities/auth_provider.dart';
 
-class AuthenticationOptionModel {
-  AuthenticationOptionModel(
+class AuthProvidersModel {
+  AuthProvidersModel(
     this.authProvider,
     this.logo, {
     this.onPressed,

@@ -1,5 +1,4 @@
-/// Assets specific to the onboarding screens alone.
-class OnBoardingAssets {
+class Assets {
   static const String rootPath = 'assets/images';
 
   static const String onboardingImage1 = '$rootPath/onboarding_image_1.jpeg';
@@ -12,4 +11,7 @@ class OnBoardingAssets {
   static const String google = '$rootPath/google.png';
   static const String facebook = '$rootPath/facebook.png';
   static const String apple = '$rootPath/apple.png';
+
+  //
+  static const String airbnbLogo = '$rootPath/airbnb_logo.png';
 }

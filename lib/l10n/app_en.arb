@@ -11,5 +11,31 @@
     },
     "emailTextFieldLabel": "Email",
     "firstNameTextFieldLabel": "First name",
-    "lastNameTextFieldLabel": "Last name"
+    "lastNameTextFieldLabel": "Last name",
+    "profileSetupScreenTitle": "Add your info",
+    "nameFieldsCaution": "Make sure it matches the name on your government ID.",
+    "birthDayTextFieldLabel": "Birthday",
+    "birthDayTextFieldCaution": "To sign up, you need to be at least 18. Other people who use Airbnb won't see your birthday.",
+    "emailTextFieldInfo": "We'll email you a reservation confirmation.",
+    "passwordTextFieldLabel": "Password",
+    "passwordValidationMessages": "Password strength is weak\nCan't include your name or email address",
+    "passwordValidationPassedMassege": "Password is strong",
+    "agreeAndContinueButtonLabel": "Agree and continue",
+
+    "msg1":"By selecting ",
+    "msg2": "Agree and Continue ",
+    "msg3": ", I agree to Airbnb's",
+    "msg4": "Terms of Service",
+    "msg5": "Payment Terms of Service",
+    "msg6": " and ",
+    "msg7": "Nondiscrimination Policy",
+    "msg8": ", and acknowledge the ",
+    "msg9": "Privacy Policy",
+
+    "commnityCommitmentSheetTitle": "Our community commitment",
+    "msg10": "Airbnb is a community where anyone can belong",
+    "msg11": "To ensure this, we're asking you to commit to the following",
+    "msg12": "I agree to treat everyone in the Airbnb community-regardless if their race, religion, national origin, ethnicity, skin color, disability, sex, gender identity, sexual orientation or age-with respect, and without judgment or bias.",
+    "learnMoreButtonLabel": "Learn more",
+    "declineButtonLabel": "Decline"
 }

@@ -11,5 +11,31 @@
     },
     "emailTextFieldLabel": "E-mail",
     "firstNameTextFieldLabel": "Prénom",
-    "lastNameTextFieldLabel": "Nom de famille"
+    "lastNameTextFieldLabel": "Nom de famille",
+    "profileSetupScreenTitle": "Ajoutez vos informations",
+    "nameFieldsCaution": "Assurez-vous qu'il correspond au nom figurant sur votre pièce d'identité gouvernementale.",
+    "birthDayTextFieldLabel": "Anniversaire",
+    "birthDayTextFieldCaution": "Pour vous inscrire, vous devez avoir au moins 18 ans. Les autres personnes qui utilisent Airbnb ne verront pas votre anniversaire.",
+    "emailTextFieldInfo": "Nous vous enverrons par e-mail une confirmation de réservation.",
+    "passwordTextFieldLabel": "Mot de passe",
+    "passwordValidationMessages": "La force du mot de passe est faible\nImpossible d'inclure votre nom ou votre adresse e-mail",
+    "passwordValidationPassedMassege": "Le mot de passe est fort",
+    "agreeAndContinueButtonLabel": "Accepter et continuer",
+
+    "msg1":"En sélectionnant ",
+    "msg2": "Accepter et continuer ",
+    "msg3": ", j'accepte les conditions d'Airbnb",
+    "msg4": "Conditions d'utilisation",
+    "msg5": "Conditions de service de paiement",
+    "msg6": " et ",
+    "msg7": "Politique de non-discrimination",
+    "msg8": ", et reconnaissons le ",
+    "msg9": "politique de confidentialité",
+
+    "commnityCommitmentSheetTitle": "Notre engagement communautaire",
+    "msg10": "Airbnb est une communauté à laquelle chacun peut appartenir",
+    "msg11": "Pour garantir cela, nous vous demandons de vous engager à ce qui suit",
+    "msg12": "J'accepte de traiter tous les membres de la communauté Airbnb, quels que soient leur race, leur religion, leur origine nationale, leur appartenance ethnique, leur couleur de peau, leur handicap, leur sexe, leur identité de genre, leur orientation sexuelle ou leur âge, avec respect, et sans jugement ni parti pris.",
+    "learnMoreButtonLabel": "Apprendre encore plus",
+    "declineButtonLabel": "Déclin"
 }

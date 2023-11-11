@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:airbnb/shared/sizes.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatefulWidget {
@@ -13,21 +14,26 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
     return Container(
       padding: const EdgeInsets.all(5.0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        border: Border.all(width: focus ? 1.5 : 1.0, color: focus ? Colors.black : Colors.black26),
+        borderRadius: BorderRadius.circular(Sizes.borderRaduis),
+        border: Border.all(
+          width: focus ? 1.5 : 1.0,
+          color: focus ? colorScheme.scrim : colorScheme.secondary,
+        ),
       ),
       child: TextFormField(
+        style: const TextStyle(fontWeight: FontWeight.w300),
         onTap: () => setState(() => focus = true),
         onTapOutside: (event) => setState(() => focus = false),
         decoration: InputDecoration(
           label: Text(widget.label),
         ),
-        cursorColor: Colors.black12,
+        cursorColor: colorScheme.secondary,
         cursorWidth: 0.5,
-        keyboardType: TextInputType.phone,
       ),
     );
   }

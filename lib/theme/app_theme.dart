@@ -5,6 +5,11 @@ ThemeData themeData = ThemeData(
   colorScheme: ColorScheme.fromSeed(
     seedColor: const Color.fromARGB(255, 192, 67, 96),
     background: Colors.white,
+    secondary: Colors.black12,
+  ),
+  textTheme: const TextTheme(
+    headlineSmall: TextStyle(fontWeight: FontWeight.w500),
+    titleMedium: TextStyle(fontWeight: FontWeight.w500),
   ),
   appBarTheme: const AppBarTheme(
     backgroundColor: Colors.white,
@@ -18,7 +23,7 @@ ThemeData themeData = ThemeData(
     contentPadding: EdgeInsets.all(5.0),
     focusedBorder: InputBorder.none,
     enabledBorder: InputBorder.none,
-    labelStyle: TextStyle(color: Colors.black87, fontWeight: FontWeight.w300),
+    labelStyle: TextStyle(color: Colors.black54, fontWeight: FontWeight.w300),
   ),
   filledButtonTheme: FilledButtonThemeData(
     style: FilledButton.styleFrom(
@@ -35,7 +40,7 @@ ThemeData themeData = ThemeData(
         borderRadius: BorderRadius.circular(15.0),
       ),
       side: const BorderSide(color: Colors.black),
-      fixedSize: const Size(double.infinity, 50.0),
+      fixedSize: const Size(double.maxFinite, 50.0),
     ),
   ),
 );

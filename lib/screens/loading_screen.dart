@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:airbnb/ui/onboarding/assets/onboarding_assets.dart';
+import 'package:airbnb/shared/assets.dart';
+import 'package:airbnb/shared/navigation/route_names.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
@@ -22,7 +23,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
         setState(() => animationImageIndex++);
         return;
       } else if (mounted) {
-        context.go('/phone');
+        context.goNamed(RouteNames.phoneScreen);
       }
     });
   }
@@ -30,22 +31,19 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
     List<String> animationImages = [
-      OnBoardingAssets.onboardingImage1,
-      OnBoardingAssets.onboardingImage2,
-      OnBoardingAssets.onboardingImage3,
+      Assets.onboardingImage1,
+      Assets.onboardingImage2,
+      Assets.onboardingImage3,
     ];
 
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 172, 172, 172),
       body: Center(
-        child: Animate(
-          effects: const [FadeEffect()],
-          child: Image.asset(
-            animationImages[animationImageIndex],
-            height: 50,
-            width: 50,
-          ),
-        ),
+        child: Image.asset(
+          animationImages[animationImageIndex],
+          height: 50,
+          width: 50,
+        ).animate().fade(),
       ),
     );
   }
